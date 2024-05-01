@@ -1,0 +1,2 @@
+springboot = 8070
+database = 3306
