@@ -1,6 +1,6 @@
 services:
   database:
-    image: shubhanshu1902/spe_database
+    image: charvykoshta/spe_database
 
     container_name: database
     restart: always
@@ -14,7 +14,7 @@ services:
 
 
   backend: 
-    image: shubhanshu1902/spe_backend
+    image: charvykoshta/spe_backend
     depends_on:
       - database
     restart: on-failure
@@ -28,7 +28,7 @@ services:
     
     
   frontend:
-    image: shubhanshu1902/spe_frontend
+    image: charvykoshta/spe_frontend
     ports:
       - 3000:3000
     networks:
